@@ -1,0 +1,516 @@
+\documentclass[11pt, a4paper, twoside, openright]{book}
+%\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc} %per riuscire a scrivere gli accenti
+\usepackage[english]{babel} % lingua del documento
+\usepackage{url} % per scrivere gli indirizzi Internet
+
+
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+%\usepackage[pdftex]{graphicx} %per poter inserire le figure
+
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+
+\usepackage{xspace}
+\usepackage{indentfirst}
+%\usepackage{subfigure}
+\usepackage[small]{caption}
+\usepackage{eucal}
+\usepackage{eso-pic}
+\usepackage{afterpage}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{multirow}
+\usepackage{setspace}
+\pagestyle{fancy} 
+
+\usepackage{subfig}
+
+\usepackage{amsmath}
+\usepackage{amsthm} % dopo amsmath
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{caption}
+%\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array,makecell}
+\usepackage{enumerate}
+\usepackage[export]{adjustbox}
+\usepackage{verbatim}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage[qm]{qcircuit}
+
+%Pacchetti per abstract%
+\usepackage{fancyhdr}
+\newenvironment{abstract}%
+{\cleardoublepage%
+\thispagestyle{empty}%
+\null \vfill\begin{center}%
+\bfseries \abstractname \end{center}}%
+{\vfill\null}
+
+%%%%%%INTESTAZIONE DELLE PAGINE NEI CAPITOLI come voglio io%%%%%%
+%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%
+%\pagestyle{fancy}
+%
+%\fancyhead[LE,RO]{\nouppercase{\slshape \rightmark}}
+%\fancyhead[LO,RE]{\nouppercase{\slshape \leftmark}}
+%\fancyfoot[C]{\thepage}
+%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%%ROCCO%
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{\ifnum\value{chapter}>0\nouppercase{\leftmark}\fi}
+\fancyhead[LE]{\small\textbf{\thepage}}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RO]{\small\textbf{\thepage}}
+
+\renewcommand{\chaptermark}[1]{%
+ \markboth{\MakeUppercase{%
+ \chaptername}\ \thechapter.%
+ \ #1}{}}
+ 
+%\fancyhf{} % azzeriamo i campi
+%\fancyhead[RE]{\leftmark}
+%\fancyhead[LO]{\nouppercase{\rightmark}}
+
+
+
+
+%%Per scrivere identità%%
+\usepackage{bbold}
+
+
+
+%%%%Box colorato%%%%
+\usepackage{xcolor}
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.93, 0.93, 0.93}%{0.9, 0.89, 0.89} % platinum
+%%%colore verde python%%%
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+\definecolor{darkred}{rgb}{0.8, 0.0, 0.0}
+\definecolor{violet}{rgb}{0.55, 0.0, 0.55}
+
+%PYTHON CODE IN LATEX%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\usepackage{xcolor}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{commentcolour}{rgb}{0.43,0.63,0.65}
+ 
+%\lstdefinestyle{mystyle}{ %Stile python code
+%    backgroundcolor=\color{backcolour},   
+%    commentstyle=\color{codegreen},
+%    keywordstyle=\color{magenta},
+%    numberstyle=\tiny\color{codegray},
+%    stringstyle=\color{codepurple},
+%    basicstyle=\ttfamily\footnotesize,
+%    breakatwhitespace=false,         
+%    breaklines=true,                 
+%    captionpos=b,                    
+%    keepspaces=true,                 
+%    numbers=left,                    
+%    numbersep=5pt,                  
+%    showspaces=false,                
+%    showstringspaces=false,
+%    showtabs=false,                  
+%    tabsize=2
+%}
+% 
+%\lstset{style=mystyle}
+
+\lstdefinestyle{mystyle}{ %Stile python code
+    backgroundcolor=\color{shadecolor},   
+    commentstyle=\color{commentcolour},
+    keywordstyle=\color{darkgreen},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{darkred},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+
+
+
+%%%Blocco immagine nella posizione che si vuole%%%
+\usepackage{float} %poi bisogna usare un \begin{figure}{H}
+
+
+
+%%%%%indent%%%
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{0pt}
+
+
+
+%%%%%circuito secondo capitolo %%%%%%%%%
+\usetikzlibrary{fit}
+% \sl è una variabile definita per automatizzare la procedura di posizionamento con le coordinate e rendere migliori i risultati. E' la semilunghezza del lato del quadrato
+\def\sl{0.4}
+
+\newcommand{\quadrato}[2] % #1 = name from to[generic,n=#1], #2 = rotation angle
+{\draw[line width=0.4] (#1) +(-\sl,\sl) -- +(\sl,\sl) -- +(\sl,-\sl) -- +(-\sl,-\sl) -- +(-\sl,\sl) -- +(\sl,-\sl) -- +(\sl,\sl) -- +(-\sl,-\sl);}
+
+%%%%%%%%%%%%%link ipertestuale per indice%%%%%%%%
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=false,
+	linkcolor=black,
+	filecolor=blue,
+	citecolor = blue,      
+	urlcolor=blue,
+	}
+%\hypersetup{colorlinks=true,linkcolor=blue}
+
+
+%COMANDI%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\bra}[1]{\left\langle #1 \right |}
+\newcommand{\ket}[1]{\left| #1 \right \rangle}
+\newcommand{\braket}[2]{\left\langle #1 | #2 \right\rangle}
+
+\renewcommand{\d}[0]{\mathrm{d}}
+%ROCCO%
+%\newcommand{\dd}[0]{\mathrm{d}}
+
+
+\newcommand{\vmed}[1]{\left \langle #1 \right \rangle}
+\newcommand{\vmedvec}[1]{\langle #1 \rangle}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\R}[0]{\mathbb{R}}
+\newcommand{\absvec}[1]{| #1 |}
+\newcommand{\norm}[1]{{\left|\!\left| #1 \right|\!\right|}}
+\newcommand{\normvec}[1]{|\!| #1 |\!|}
+\newcommand{\tr}{\operatorname{Tr}}
+\newcommand{\dev}[2]{\displaystyle \frac{\d #1}{\d #2}}
+\renewcommand{\H}[0]{\operatorname{H}}
+\renewcommand{\Re}[1]{\operatorname{\mathbb{R}e}\left[ #1 \right]}
+\renewcommand{\Im}[1]{\operatorname{\mathbb{I}m}\left[ #1 \right]}
+
+
+
+\newcommand{\ketbra}[2]{| #1 \rangle \langle #2 |}
+\newcommand{\F}[0]{\mathcal{F}}
+\renewcommand{\O}[0]{\mathcal{O}}
+\newcommand{\E}[0]{\mathcal{E}}
+\renewcommand{\epsilon}[0]{\varepsilon}
+\renewcommand{\'}[0]{\`}
+
+\theoremstyle{definition}
+\newtheorem*{postulate}{Postulate} 
+\newtheorem*{projective}{Projective measurements} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+%%%%%%FRONTESPIZIO%%%%%%
+\frontmatter
+\begin{titlepage}
+\vspace{5mm}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=.13]{UNIPD.png}
+\end{figure}
+\vspace{5mm}
+\begin{center}
+{{\huge{\textsc{\bf UNIVERSIT\`A DEGLI STUDI DI PADOVA}}}\\}
+\vspace{5mm}
+{\Large{\bf Dipartimento di Fisica e Astronomia ``Galileo Galilei''}} \\
+\vspace{5mm}
+{\Large{\textsc{\bf Corso di Laurea in Fisica}}}\\
+\vspace{20mm}
+{\Large{\textsc{\bf Tesi di Laurea}}}\\
+\vspace{30mm}
+\begin{spacing}{3}
+{\LARGE \textbf{Quantum computing programming languages}}\\
+\end{spacing}
+\vspace{8mm}
+\end{center}
+
+\vspace{20mm}
+\begin{spacing}{2}
+\begin{tabular}{ l  c  c c c  cc c c c c  l }
+{\Large{\bf Relatore}} &&&&&&&&&&& {\Large{\bf Laureanda}}\\
+{\Large{\bf Prof. Simone Montangero}} &&&&&&&&&&& {\Large{\bf Alice Pagano}}\\
+%{\Large{\bf Correlatore}}\\
+%{\Large{\bf Prof./Dr. Nome Cognome}}\\
+\end{tabular}
+\end{spacing}
+\vspace{15 mm}
+
+\begin{center}
+{\Large{\bf Anno Accademico 2018/2019}}
+\end{center}
+\end{titlepage}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+%%%ABSTRACT%%%%%%%%%
+
+\chapter*{\centering {\normalsize Abstract}}
+%\chapter*{\centering {Abstract}}
+\noindent In this Thesis we analyze the quantum software developed by IBM and Google, respectively Qiskit and Cirq. It is reviewed how to program a simple quantum algorithm on both software and 
+they are compared. 
+In order to test their performance, we implement a circuit to verify particular $N$-qubit entangled states, called GHZ states, in both software.
+In fact, one of the main goal of quantum computation, and of quantum science in general, is the creation of a highly entangled state of many particles, because entangled states are
+the cornerstone of quantum speedups. We quantify the goodness of the state created through fidelity measurements. These provide a fundamental criterion for the comparison of two quantum states.
+We test the quantum circuit on the cloud service made available by IBM. In Cirq, no cloud service is yet available, therefore we test that circuit adding quantum noise channels, in order to reproduce and study noise effects in a model of real hardware.
+
+%Finally, a simple atomic system, Hydrogen atom, is simulated to calculate its ground state energy, using a simple quantum circuit simulated on both software.
+
+%\begin{abstract}
+%%Scopo, metodi e risultati %
+%In this Thesis the software frameworks introduced by IBM and Google, respectively Qiskit and Cirq, are analyzed. It is explained how to program a simple quantum algorithm on both software and 
+%their quantum programming languages are compared. \\
+%The main goal of quantum computation of last years is the creation of a highly entangled state. In both software frameworks, a GHZ state of $N$-qubit ( $N<18$ ) is created and its state fidelity is bounded by measuring multiple quantum coherences. In particular, the quantum circuit that generates such a state is tested on the cloud service make available by IBM. In Cirq, that circuit is tested using a device noise model that simulate a real quantum device because no cloud service is available. \\
+%Finally, a simple atomic system, Hydrogen atom, is simulated to calculate its ground state energy, using a simple quantum circuit simulated on both software.
+%\end{abstract}
+
+%%%%%%%%%%%%
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+%\lstlistoflistings
+
+%%%%%%%%%%%%
+
+%\frontmatter
+\pagestyle{plain}%ROCCO%
+
+\chapter{Introduction}
+
+
+What is quantum computing?
+All computing systems rely on the fundamental ability to store and manipulate information. Current classical computers manipulate individual bits, which store information as binary 0 and 1 states. On the contrary, quantum computers leverage quantum mechanical phenomena, such as superposition and entanglement, to manipulate information. To do this, they rely on quantum bits, or qubits. Therefore, a quantum software allows to manipulate such qubits, translating a few lines of code in real quantum physical phenomena on the quantum hardware. 
+
+Research in quantum science is currently exploring a new exciting challenge: the \textit{entanglement frontier} \cite{PreskillNote}. Quantum entanglement is the essential feature that makes information processing by quantum systems very different from the processing done by an ordinary digital computer. Currently, we are acquiring and improving the tools to build and precisely control highly entangled quantum states of many particles,  that can not be simulated even with the best digital computers available or characterized using existing theoretical tools.
+
+Quantum computers could spur new breakthroughs in science: untangling the complexity of molecular and chemical interactions leading to the discovery of new medicines and materials, finding the best solutions for ultra-efficient logistics and global supply chains, making facets of artificial intelligence such as machine learning much more powerful when data sets are very large and much more.
+
+Today quantum computers are small, noisy, and not nearly as powerful as current classical computers, but Noisy Intermediate-Scale Quantum (NISQ) computers, with a number of qubits ranging from 50 to few hundreds, will be available soon. New tools for exploring the physics of many entangled particles will be provided making captivating applications a solid reality.
+
+While on the one hand hardware development is a critical aspect of quantum computation, on the other hand part of nowadays researches focus on quantum software development that will allow anyone to use quantum computers. Multinational technology companies, as IBM and Google, are investing a great amount of resources in the development of a more user-friendly quantum software, making quantum computation widely approachable. 
+Thanks to its versatility, Python programming language is often used, indeed both IBM and Google's quantum software framework, respectively Qiskit and Cirq, are based upon it.
+
+In this Thesis we approach Qiskit and Cirq software. We illustrate their main features, in order to explain how a simple quantum circuit can be implemented and executed on both software. 
+Then, we implement in each software a circuit for creating Multipartite entanglement in Greenberger-Horne-Zeilinger (GHZ) states. They are particular entangled states and are important because the ability to generate entangled states is indicative of high fidelity gate operations. In Qiskit, the circuit is tested in the real hardware provided by IBM. Google does not provide any real device, therefore, in Cirq, we test the circuit adding quantum noise channels in order to study noise effects in a model of real hardware.
+
+In the first chapter, we provide a brief introduction to the fundamental concepts of quantum computation and information. First, we define the qubit and we illustrate its representation in state vectors formalism. Then, we introduce the density matrix representation of a state. We define what entanglement is and how it could be quantified. Afterwards, we illustrate the structure of a generic quantum circuit and we list the main operations that can act on the qubit.  Finally, we introduce the quantum noise channels that are useful tools to reproduce the noise acting on an open system.
+
+In the second chapter, firstly we briefly explain how a quantum hardware is built. Then we introduce the Qiskit and Cirq library. Both software are analyzed and their main features are described; it is explained how a simple quantum algorithm could be programmed using them.
+
+In the third chapter, we implement a circuit for creating a $N$-qubit GHZ state, both in Qiskit and Cirq software. We follow the protocol described in \cite{Article} for calculating the fidelity of these states. In fact, we tried to verify the GHZ states in different devices and various conditions. In Qiskit, the circuit is executed both in simulators and in real devices as the IBM Q Yorktown and the IBM Q Melbourne.
+In Cirq, we execute the circuit only in simulators, because the Google hardware are not publicly available. We add quantum noise channels to the circuit to study how the state changes as a function of the parameters of the channels. Afterwards, we measure the density matrix of a 5-qubit GHZ state. Finally, we consider a Bell state, an entangled state of 2 qubits, and we quantify the entanglement through concurrence measurements.
+
+
+
+
+
+
+
+%%%%%%CAPITOLI%%%%%%%
+\mainmatter
+\pagestyle{fancy}%ROCCO%
+
+\input{chapter1/Chapter1.tex}
+%\input{chapter4/Chapter4.tex}
+\input{chapter2/Chapter2.tex}
+\input{chapter3/Chapter3.tex}
+
+\backmatter
+\pagestyle{plain}%ROCCO%
+
+\chapter{Conclusions}
+
+%frase per iniziare 
+%motivazione della tesi
+To date, available quantum computers are small, noisy, and not nearly as powerful as current classical computers. While on the one hand hardware development is a critical aspect of quantum computation and computers with more qubits are being built, on the other hand part of nowadays researches focus on quantum software development.
+
+
+In this Thesis, after we have introduced the fundamental concepts of quantum computation and information, we have analyzed the two software developed by the IBM and Google companies, Qiskit and Cirq. 
+In general, we find that currently the Qiskit platform is more developed than the Cirq one. A comprehensive tutorial and a wide community for Qiskit exist, which make this software easly approachable for a beginner, but more importantly a cloud service allows a general user to interact with a real hardware. 
+The Cirq does not provide the same utilities, in particular only a library documentation is available and no cloud service is accessible by the public. It is expected to change in the future, indeed Google has developed its own quantum computers that are expected to be made available over the cloud soon. 
+Apart from this, both Qiskit and Cirq are good tools for writing and manipulating quantum circuits. They are both based on the Python programming language which allows a clean syntax of the code. 
+Qiskit is organized in four distinct components which contains tools for doing different studies, as manipulating circuit, simulating it or building a noise model and doing error correction. A simple circuit is created by providing a quantum and a classical register, applying quantum gates on qubits and doing measurements. Then, the circuit is executed on a backend, which is accessed trough a provider.
+  In Cirq,  a circuit is a collection of moments, which consist on operations applied on qubits at the same time slice. It could be executed in different types of simulators. 
+Probably, the biggest missing feature of Cirq is the ability to simulate noisy quantum circuits, which Qiskit instead does very well. In fact, in Cirq the modeling of noise is possible only through quantum channels added in the circuit. Instead, in Qiskit it is possible to build a noise model that consists on various types of error on each gate or classical readout errors.
+
+
+In order to test  the performance of the two software, we have implemented a circuit of $N$ qubits, called MQC circuit, for studying the creation of a GHZ state, in both software.
+ The fidelity bounds of such a state were calculated through multiple quantum coherences measurements \cite{Article}.
+  In Qiskit, we executed the circuit in different backends for different values of $N$. Firstly, it was executed in ideal conditions in the Qasm Simulator, giving the expected result of fidelity equal to one. Then, it was executed in noisy conditions in the same simulator, where the noise model was based upon the parameters of the IBM Q Melbourne real device, and the results showed a decrement of the fidelity values as expected. 
+After that, the circuit was executed in two different real devices. We find that, in IBM Q Yorktown, the maximum GHZ state acceptable \cite{Fidelity} corresponds to $N=4$ qubits. It is not a bad result if we think that this device supports only 5 qubits. In IBM Q Melbourne, that is a 14 qubits device, the limit is $N=4$ qubits too. It means that only 4 qubits of the 14 available could be used to create a good entangled state.
+These results show  how the public device available are beset with a certain amount of noise, that does not provide high fidelity gate operations. Therefore, at the moment they are unusable for complex tasks.
+%In particular, the machine 'ibmq melbourne' makes available a great number of qubits, but they are still unstable for most. 
+In Cirq, we have created the 5-qubit MQC circuit and we have executed it in the Density Matrix Simulator in noiseless conditions. After we have checked that the results give a fidelity equal to one, we have added quantum channels for studying how they affect the goodness of the 5-qubit GHZ state. 
+Firstly, Amplitude Damping channels and Depolarizing channels, with a fixed parameter $\gamma$, are added in two distinct circuits. In both cases, we have applied a different number of channels in function of the time slices, in order to reproduce noise that increases in time as in a real hardware. We have calculated the relaxation time $T$ associated to the quantum noise channels. The values obtained are not reliable, but they represent just an estimate.
+For the Amplitude Damping case, the maximum 5-qubit GHZ state acceptable is for $\gamma=0.08$, which corresponds to $T_{AD}=11.99\, \mu s$. For the Depolarizing, we have obtained $\gamma=0.022$ and $T_{D}=44.95\, \mu s$. Then, we have created a 5-qubit MQC circuit and even in this circuit we have added noise channels in function of the time slices. We have analyzed the state obtained by measuring the four corners of the density matrix of the state. As expected, for the Amplitude Damping channel the system state decays into the ground state, while for the Depolarizing channel it decays into a completely mixed state.
+Finally, we have implemented a circuit for creating a \textit{Bell state}. The goodness of the state was analyzed through concurrence measurements and the results are consistent with the theory.
+
+
+In conclusion, we have compared Qiskit and Cirq software and we have tested them for creating a $N$-qubit GHZ state. Cirq provides good tools for working with circuits for near term quantum computers, but Qiskit provides more tools and at the moment they are more developed too. 
+Taking into account the current grade of development of the Cirq platform, it is necessary a growth of the Cirq community in order to make Cirq library more approachable. Maybe, it will happen when Google cloud service will be available for the public.
+In order to resolve more complex tasks, it is necessary that in the near future quantum computers provided by companies as IBM and Google will make available more qubits and more stable gate operations. Nowadays, a great amount of energy is spent by researchers and private companies to ensure that quantum computers will become a solid reality. 
+
+
+
+%Risultati stato GHZ
+%%...da questa prova si nota che i cosi messi a disposizione da IBM non sono buoni, ma almeno li mette....
+%Qiskit
+
+%Cirq
+
+%limitazioni del mio studio
+
+%raccomandazioni per studi futuri, suggerimenti etc
+
+
+%cosa si è fatto alla fine di tutto: obiettivo principale...
+
+
+
+%frase per concludere ottimista e incoraggiante
+
+
+
+
+
+
+
+
+%%%BIBLIOGRAFIA%%%
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\bibname}
+\begin{thebibliography}{99}
+
+\bibitem{Nielsen} 
+Michael A. Nielsen and Isaac L. Chuang.
+\textit{Quantum computation and quantum information}. 
+United Kingdom, Cambridge University Press, 2016.
+
+\bibitem{Benenti} 
+Benenti, G., Casati, G., and Strini, G. 
+\textit{Principles of quantum computation and
+information: Volume II: Basic Tools and Special Topics}. 
+World Scientific Publishing
+Company, 2007.
+
+%\bibitem{knuthwebsite} 
+%Knuth: Computers and Typesetting,
+%\\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+
+\bibitem{Article} 
+Ken X. Wei, Isaac Lauer, Srikanth Srinivasan, Neereja Sundaresan, Douglas T. McClure, David Toyli, David C. McKay, Jay M. Gambetta, and Sarah Sheldon.
+\textit{Verifying Multipartite Entangled GHZ States via Multiple Quantum Coherences}.
+IBM T.J. Watson Research Center, Yorktown Heights, NY 10598, USA, 15 May 2019.
+arXiv:1905.05720
+
+\bibitem{PreskillNote} 
+John Preskill.
+\textit{Quantum Computing in the NISQ era and beyond}.
+Institute for Quantum Information and Matter and Walter Burke Institute for Theoretical Physics, California Institute of Technology, Pasadena CA 91125, USA, 30 July 2018.
+
+\bibitem{Hardware} 
+M. H. Devoret, A. Wallraff, and J. M. Martinis.
+\textit{Superconducting Qubits: A Short Review}.
+Department of Applied Physics, Yale University, New Haven, CT 06520 and Department of Physics, University of California, Santa Barbara, CA 93106.
+2 February 2008.
+
+\bibitem{Hardware2} 
+John M. Martinis, Kevin Osborne.
+\textit{Superconducting qubits and the physics of the josephson junctions}.
+1National Institute of Standards and Technology, 325 Broadway, Boulder, CO 80305-3328, USA. 
+1999.
+
+\bibitem{SoftwareComparisonGeneral} 
+Ryan LaRose.
+\textit{Overview and Comparison of Gate Level Quantum Software Platforms}.
+Department of Computational Mathematics, Science, and Engineering, Michigan State University. 
+22 June 2018.
+
+\bibitem{SoftwareComparisonCirq} 
+Ryan LaRose.
+\textit{Practical Quantum Computing with Cirq}.
+Department of Computational Mathematics, Science, and Engineering, Michigan State University. 
+\url{https://quantumcomputingreport.com/scorecards/review-of-the-cirq-quantum-software-framework/}
+
+\bibitem{DocumentationCirq} 
+The Cirq Developers.
+\textit{Cirq Documentation}.
+Release 0.5.0, 24 April 2019.
+\url{https://cirq.readthedocs.io/en/stable/index.html}
+
+\bibitem{DocumentationQiskit} 
+The Qiskit Developers.
+\textit{Qiskit API documentation}.
+Release 0.8.0, 9 March 2019.
+\url{https://qiskit.org/documentation/index.html}
+
+\bibitem{TutorialQiskit} 
+The Qiskit Developers.
+\textit{Qiskit tutorials}.
+GitHub repository.
+2019.
+\url{https://github.com/Qiskit/qiskit-tutorials}
+
+\bibitem{Concurrence} 
+Scott Hill and William K. Wootters
+\textit{Entanglement of a Pair of Quantum Bits}.
+Department of Physics, Williams College, Williamstown MA 01267
+24 March 1997.  
+arXiv:quant-ph/9703041
+
+\bibitem{Divincenzo} 
+David P. DiVincenzo
+\textit{The Physical Implementation of Quantum Computation}.
+IBM T.J. Watson Research Center, Yorktown Heights, NY 10598 USA
+February 1, 2008.
+arXiv:quant-ph/0002077
+
+\bibitem{Fidelity} 
+Otfried Guhne and Geza Toth
+\textit{Entanglement detection}.
+27 Feb 2009.
+arXiv:0811.2803 
+
+\end{thebibliography}
+
+
+\end{document}

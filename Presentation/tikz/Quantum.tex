@@ -1,0 +1,40 @@
+\documentclass[tikz,border=10pt]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+
+\newcommand{\ket}[1]{\left| #1 \right \rangle}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+ \node at (0, 3.05)   (input) {input};    
+ \node[draw] at (0, 2.5)   (a) {$ \hspace{0.1cm}\ket{\psi_{in}}\hspace{0.1cm}$};    
+    
+\node[inner sep=0pt] (russell) at (0,0)
+    {\includegraphics[width=.25\textwidth]{QuantumComputer.pdf}};
+
+\node[draw] at (0, -2.5)   (b) {$\hspace{0.1cm} \ket{\psi_{out}} = \hat{U} \ket{\psi_{in}}\hspace{0.1cm}$};   
+ \node at (0, -3.05)   (input) {output};    
+ 
+\draw[->,thick] (0,2.1) -- (0,1.5);
+
+\draw[->,thick] (0,-1.5) -- (0,-2.1);
+
+%\node[inner sep=0pt] (bottom) at (0,-6)
+%    {\includegraphics[width=.25\textwidth]{ClassicalComputer.pdf}};
+ 
+%\draw[<->,thick] (russell.south east) -- (bottom.center);
+%    
+%\draw[<->,thick] (russell.center) -- (bottom.center)
+%    node[midway,fill=white] {Principia Mathematica};
+ 
+ %Node
+
+  
+\end{tikzpicture}
+
+
+\end{document}

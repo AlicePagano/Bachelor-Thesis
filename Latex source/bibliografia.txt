@@ -1,0 +1,8 @@
+Bibliografia
+
+John Preskill - Quantum Computing in the NISQ era and beyond 
+Institute for Quantum Information and Matter and Walter Burke Institute for Theoretical Physics,California Institute of Technology, Pasadena CA 91125, USA30 July 2018
+
+Verifying Multipartite Entangled GHZ States via Multiple Quantum CoherencesKen X. Wei, Isaac Lauer, Srikanth Srinivasan, Neereja Sundaresan, Douglas T.McClure, David Toyli, David C. McKay, Jay M. Gambetta, and Sarah SheldonIBM T.J. Watson Research Center, Yorktown Heights, NY 10598, USA(Dated: May 15, 2019)
+
+Nielsen,chuang....

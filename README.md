@@ -1,0 +1,7 @@
+# Quantum computing programming languages
+
+This repository contains my bachelor Thesis (a.y. 2018/2019) on quantum computing programming languages.
+
+## Abstract
+
+In this Thesis we analyze the quantum software developed by IBM and Google, respectively Qiskit and Cirq. It is reviewed how to program a simple quantum algorithm on both software and they are compared. In order to test their performance, we implement a circuit to verify particular N-qubit entangled states, called GHZ states, in both software. In fact, one of the main goal of quantum computation, and of quantum science in general, is the creation of a highly entangled state of many particles, because entangled states are the cornerstone of quantum speedups. We quantify the goodness of the state created through fidelity measurements. These provide a fundamental criterion for the comparison of two quantum states. We test the quantum circuit on the cloud service made available by IBM. In Cirq, no cloud service is yet available, therefore we test that circuit adding quantum noise channels, in order to reproduce and study noise effects in a model of real hardware.

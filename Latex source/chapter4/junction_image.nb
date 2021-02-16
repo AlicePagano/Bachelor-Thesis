@@ -1,0 +1,2085 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    113470,       2077]
+NotebookOptionsPosition[    112140,       2042]
+NotebookOutlinePosition[    112497,       2058]
+CellTagsIndexPosition[    112454,       2055]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124, 
+     0.49637960811611115`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+     0.21989103435025448`, 0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303, 
+     0.3525642609137193}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+     0.6480176211453729}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+     1.2204537033224923`, 0.6480176211453726}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`, 
+     0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924, 
+     0.7966271447333806}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+     0.796032420371369}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+     0.49949771501502616`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+     0.6470130511754242}}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126, 
+     0.10683876103037204`}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+     0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+     0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+     0.3169683578757646, 0.6854685019739162}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {0.7195758482349119,
+      0.569566012964259}, {0.6902804653226654, 0.5102231920256539}, {
+     0.6684434197464787, 0.5013284477198181}, {0.6714370016605595, 
+     0.5232203878298818}, {0.6984963472262249, 0.5552476887113964}, {
+     0.6893051724374545, 0.5695605235108713}, {0.6938760572915951, 
+     0.5601516004043896}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {0.6689447898225536,
+      0.6384495038906501}, {0.6719566699145934, 0.6069034450894553}, {
+     0.6600829822370439, 0.6071266828605543}, {0.655104048014419, 
+     0.626740499814731}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+     0.4989954300300504}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755, 
+     0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+     0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+     0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {0.7725326050658508,
+      0.7928678276860583}, {0.7780806126229982, 0.7856144299431386}, {
+     0.8020439064780127, 0.694615761135585}, {0.7492518332487045, 
+     0.6891061797521513}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {0.6684434197464789,
+      0.6480523876834965}, {0.6759895883367415, 0.6367313049803067}, {
+     0.7263242162661655, 0.6300195333049713}, {0.7557312180639615, 
+     0.6693093810183852}, {0.7413451905526509, 0.6719973833605519}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {0.7731492536630666,
+      0.5015937713002229}, {0.7829149912397475, 0.5210904799154625}, {
+     0.809165557339628, 0.5793390698121236}, {0.7468511123004928, 
+     0.6069071047250472}, {0.742626063009776, 0.5976884826693383}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {0.7181943357990127,
+      0.5876958476859666}, {0.7213580907681117, 0.5775110818340262}, {
+     0.7223095960219761, 0.5742521763395408}, {0.7336233594539823, 
+     0.568437015384193}, {0.7536946308571324, 0.5936573940649859}, {
+     0.7550486960260931, 0.6085374723811875}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+     0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+     1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+     0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`, 
+     0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+     1.1945581218750145`, 0.5072588871963075}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22679555187496653`, 0.5023253471274285}, {0.6668148819081345, 
+     0.5015937713002221}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6701984377697529, 0.5017424539915721}, {0.6706172432879995, 
+     0.3580217742633663}}]}, InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->{{0, 480/360}, {0, 1}}], Scaled[{0.5, 0.5}], Center, 
+    Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->{{0, 480/360}, {0, 1}}], Scaled[{0.5, 0.5}], Center, 
+    Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->{{0, 480/360}, {0, 1}}], Scaled[{0.5, 0.5}], Center, 
+    Scaled[{0.5, 0.5}]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["TUNNEL OXIDE LAYER",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "ad7ebd16-3c26-4858-96a5-6d6339e04f4d"],
+      TextAlignment->Center,
+      Background->GrayLevel[1.]], {0.8337831611931144, 0.405153224367683}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "39c244c3-13bd-409f-b453-ccd59e10f53e"],
+      TextAlignment->Center,
+      Background->GrayLevel[1.]], {0.9426939164046642, 0.7926409302793668}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "e27cfb81-9103-4149-9899-b63d8478d499"],
+      TextAlignment->Center,
+      Background->GrayLevel[1.]], {0.8337831611931142, 0.2890283638084693}, {
+     Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+     0., 1.}},
+     Alignment->{Left, Top}],
+    FontSize->14], 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[Opacity[1.]], EdgeForm[{Hue[
+    0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {1.0058709703981228`,
+      0.5828422559823552}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {0.7129983438824287,
+      0.41217972470391073`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{GrayLevel[0.09090909090909091], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {0.5727584827809485,
+      0.2935695082396037}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+     0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+     0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+     0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+     0.6764270497852924}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+     0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+     0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+     0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+     0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+     0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+     0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+  ContentSelectable->True,
+  ImagePadding->{{0., 0.}, {0., 0.}},
+  ImageSize->{830.58203125, 621.},
+  PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{{3.773730460959115*^9, 3.773730724989004*^9}, 
+   3.7737307655747547`*^9, {3.773730796789493*^9, 3.7737309272300367`*^9}, 
+   3.773731060093849*^9, {3.773731158343317*^9, 3.7737312530045424`*^9}, {
+   3.7737313181642714`*^9, 3.773731827091734*^9}, {3.773731967067034*^9, 
+   3.773732169839793*^9}, {3.773732226495017*^9, 3.773732409428171*^9}, {
+   3.77373244182872*^9, 3.773732635994158*^9}, {3.773732709987123*^9, 
+   3.773732711446993*^9}, {3.7737327790572567`*^9, 
+   3.7737328171330137`*^9}},ExpressionUUID->"1cd20756-c21a-4e2e-923f-\
+f607598688fd"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124, 
+     0.49637960811611115`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+     0.21989103435025448`, 0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303, 
+     0.3525642609137193}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+     0.6480176211453729}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+     1.2204537033224923`, 0.6480176211453726}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`, 
+     0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924, 
+     0.7966271447333806}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+     0.796032420371369}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+     0.49949771501502616`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+     0.6470130511754242}}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126, 
+     0.10683876103037204`}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+     0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+     0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+     0.3169683578757646, 0.6854685019739162}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {0.7195758482349119,
+      0.569566012964259}, {0.6902804653226654, 0.5102231920256539}, {
+     0.6684434197464787, 0.5013284477198181}, {0.6714370016605595, 
+     0.5232203878298818}, {0.6984963472262249, 0.5552476887113964}, {
+     0.6893051724374545, 0.5695605235108713}, {0.6938760572915951, 
+     0.5601516004043896}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {0.6689447898225536,
+      0.6384495038906501}, {0.6719566699145934, 0.6069034450894553}, {
+     0.6600829822370439, 0.6071266828605543}, {0.655104048014419, 
+     0.626740499814731}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+     0.4989954300300504}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755, 
+     0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+     0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+     0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {0.7725326050658508,
+      0.7928678276860583}, {0.7780806126229982, 0.7856144299431386}, {
+     0.8020439064780127, 0.694615761135585}, {0.7492518332487045, 
+     0.6891061797521513}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {0.6684434197464789,
+      0.6480523876834965}, {0.6759895883367415, 0.6367313049803067}, {
+     0.7263242162661655, 0.6300195333049713}, {0.7557312180639615, 
+     0.6693093810183852}, {0.7413451905526509, 0.6719973833605519}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {0.7731492536630666,
+      0.5015937713002229}, {0.7829149912397475, 0.5210904799154625}, {
+     0.809165557339628, 0.5793390698121236}, {0.7468511123004928, 
+     0.6069071047250472}, {0.742626063009776, 0.5976884826693383}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {0.7181943357990127,
+      0.5876958476859666}, {0.7213580907681117, 0.5775110818340262}, {
+     0.7223095960219761, 0.5742521763395408}, {0.7336233594539823, 
+     0.568437015384193}, {0.7536946308571324, 0.5936573940649859}, {
+     0.7550486960260931, 0.6085374723811875}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+     0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+     1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+     0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`, 
+     0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+     1.1945581218750145`, 0.5072588871963075}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22679555187496653`, 0.5023253471274285}, {0.6668148819081345, 
+     0.5015937713002221}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6701984377697529, 0.5017424539915721}, {0.6706172432879995, 
+     0.3580217742633663}}]}, InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], 
+   StyleBox[InsetBox[Cell["TUNNEL OXIDE LAYER",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "cbd34135-978b-4acd-84f8-407dee7a4489"], \
+{0.8337831611931144, 0.405153224367683}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "15c78ee2-2dec-4d3a-ae70-f9d2dfba597a"], \
+{0.9426939164046642, 0.7926409302793668}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "ab24afb5-5529-4010-bce2-ce993957070c"], \
+{0.8337831611931142, 0.2890283638084693}, {
+     Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+     0., 1.}},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[Opacity[1.]], EdgeForm[{Hue[
+    0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {1.0058709703981228`,
+      0.5828422559823552}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {0.7129983438824287,
+      0.41217972470391073`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{GrayLevel[0.09090909090909091], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {0.5727584827809485,
+      0.2935695082396037}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+     0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+     0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+     0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+     0.6764270497852924}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+     0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+     0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+     0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+     0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+     0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+     0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+  ContentSelectable->True,
+  ImagePadding->{{0., 0.}, {0., 0.}},
+  ImageSize->{830.58203125, 621.},
+  PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{
+  3.773732834401566*^9},ExpressionUUID->"bbf18abb-8ca0-4e81-bd21-\
+5b0d06628957"],
+
+Cell[BoxData[
+ RowBox[{"m", "=", 
+  GraphicsBox[{
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124,
+       0.49637960811611115`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+      0.21989103435025448`, 0.49999999999999933`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303,
+       0.3525642609137193}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+    {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+      0.6480176211453729}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+      1.2204537033224923`, 0.6480176211453726}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`,
+       0.49999999999999933`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924,
+       0.7966271447333806}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+      0.796032420371369}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+      0.49949771501502616`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+      0.6470130511754242}}]}, 
+    {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126,
+       0.10683876103037204`}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+      0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+      0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+      0.3169683578757646, 0.6854685019739162}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {
+      0.7195758482349119, 0.569566012964259}, {0.6902804653226654, 
+      0.5102231920256539}, {0.6684434197464787, 0.5013284477198181}, {
+      0.6714370016605595, 0.5232203878298818}, {0.6984963472262249, 
+      0.5552476887113964}, {0.6893051724374545, 0.5695605235108713}, {
+      0.6938760572915951, 0.5601516004043896}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {
+      0.6689447898225536, 0.6384495038906501}, {0.6719566699145934, 
+      0.6069034450894553}, {0.6600829822370439, 0.6071266828605543}, {
+      0.655104048014419, 0.626740499814731}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+      0.4989954300300504}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755,
+       0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+      0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+      0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {
+      0.7725326050658508, 0.7928678276860583}, {0.7780806126229982, 
+      0.7856144299431386}, {0.8020439064780127, 0.694615761135585}, {
+      0.7492518332487045, 0.6891061797521513}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {
+      0.6684434197464789, 0.6480523876834965}, {0.6759895883367415, 
+      0.6367313049803067}, {0.7263242162661655, 0.6300195333049713}, {
+      0.7557312180639615, 0.6693093810183852}, {0.7413451905526509, 
+      0.6719973833605519}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {
+      0.7731492536630666, 0.5015937713002229}, {0.7829149912397475, 
+      0.5210904799154625}, {0.809165557339628, 0.5793390698121236}, {
+      0.7468511123004928, 0.6069071047250472}, {0.742626063009776, 
+      0.5976884826693383}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {
+      0.7181943357990127, 0.5876958476859666}, {0.7213580907681117, 
+      0.5775110818340262}, {0.7223095960219761, 0.5742521763395408}, {
+      0.7336233594539823, 0.568437015384193}, {0.7536946308571324, 
+      0.5936573940649859}, {0.7550486960260931, 0.6085374723811875}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+      0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+      1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+      0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`,
+       0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+      1.1945581218750145`, 0.5072588871963075}}]}, 
+    {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+     Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+     None], LineBox[{{0.22679555187496653`, 0.5023253471274285}, {
+      0.6668148819081345, 0.5015937713002221}}]}, 
+    {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+     Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+     None], LineBox[{{0.6701984377697529, 0.5017424539915721}, {
+      0.6706172432879995, 0.3580217742633663}}]}, InsetBox[
+     GraphicsBox[{},
+      ContentSelectable->True,
+      ImageSize->{480, 360},
+      PlotRange->NCache[{{0, 
+          Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+     Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+     GraphicsBox[{},
+      ContentSelectable->True,
+      ImageSize->{480, 360},
+      PlotRange->NCache[{{0, 
+          Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+     Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+     GraphicsBox[{},
+      ContentSelectable->True,
+      ImageSize->{480, 360},
+      PlotRange->NCache[{{0, 
+          Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+     Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], 
+    StyleBox[InsetBox[Cell["TUNNEL OXIDE LAYER",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "e3dcf35c-e0de-40af-843f-b218eb41982e"], \
+{0.8337831611931144, 0.405153224367683}, {Left, Baseline},
+      Alignment->{Left, Top}],
+     StripOnInput->False,
+     FontSize->14], 
+    StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "b829488f-498e-4445-923c-7863c86deb23"], \
+{0.9426939164046642, 0.7926409302793668}, {Left, Baseline},
+      Alignment->{Left, Top}],
+     StripOnInput->False,
+     FontSize->14], 
+    StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "44b0794c-7650-47e2-9547-8e022a66d9cc"], \
+{0.8337831611931142, 0.2890283638084693}, {
+      Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+      0., 1.}},
+      Alignment->{Left, Top}],
+     StripOnInput->False,
+     FontSize->14], 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+     0.0055000000000000005`], AbsoluteThickness[8], StrokeForm[Opacity[1.]], 
+     EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+     AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {
+      1.0058709703981228`, 0.5828422559823552}}]}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+     0.0055000000000000005`], AbsoluteThickness[8], StrokeForm[{Hue[
+     0., 0.6666666666666666, 1.], Opacity[1.]}], EdgeForm[{Hue[
+     0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {
+      0.7129983438824287, 0.41217972470391073`}}]}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+     0.0055000000000000005`], AbsoluteThickness[8], StrokeForm[{GrayLevel[
+     0.09090909090909091], Opacity[1.]}], EdgeForm[{Hue[
+     0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {
+      0.5727584827809485, 0.2935695082396037}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+      0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+      0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+      0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+      0.6764270497852924}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+      0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+      0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+      0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+      0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+      0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+      0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+   ContentSelectable->True,
+   ImagePadding->{{0., 0.}, {0., 0.}},
+   ImageSize->{830.58203125, 621.},
+   PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+   PlotRangePadding->Automatic]}]], "Input",
+ CellChangeTimes->{{3.773732844857133*^9, 
+  3.77373284513698*^9}},ExpressionUUID->"47da3949-8e66-4d4a-b041-\
+8b467816db9d"],
+
+Cell[BoxData["m"], "Input",
+ CellChangeTimes->{
+  3.773732848965786*^9},ExpressionUUID->"7d6bfd97-f850-42a2-b1f4-\
+b319a4e5286b"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124, 
+     0.49637960811611115`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+     0.21989103435025448`, 0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303, 
+     0.3525642609137193}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+     0.6480176211453729}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+     1.2204537033224923`, 0.6480176211453726}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`, 
+     0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924, 
+     0.7966271447333806}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+     0.796032420371369}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+     0.49949771501502616`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+     0.6470130511754242}}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126, 
+     0.10683876103037204`}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+     0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+     0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+     0.3169683578757646, 0.6854685019739162}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {0.7195758482349119,
+      0.569566012964259}, {0.6902804653226654, 0.5102231920256539}, {
+     0.6684434197464787, 0.5013284477198181}, {0.6714370016605595, 
+     0.5232203878298818}, {0.6984963472262249, 0.5552476887113964}, {
+     0.6893051724374545, 0.5695605235108713}, {0.6938760572915951, 
+     0.5601516004043896}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {0.6689447898225536,
+      0.6384495038906501}, {0.6719566699145934, 0.6069034450894553}, {
+     0.6600829822370439, 0.6071266828605543}, {0.655104048014419, 
+     0.626740499814731}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+     0.4989954300300504}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755, 
+     0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+     0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+     0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {0.7725326050658508,
+      0.7928678276860583}, {0.7780806126229982, 0.7856144299431386}, {
+     0.8020439064780127, 0.694615761135585}, {0.7492518332487045, 
+     0.6891061797521513}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {0.6684434197464789,
+      0.6480523876834965}, {0.6759895883367415, 0.6367313049803067}, {
+     0.7263242162661655, 0.6300195333049713}, {0.7557312180639615, 
+     0.6693093810183852}, {0.7413451905526509, 0.6719973833605519}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {0.7731492536630666,
+      0.5015937713002229}, {0.7829149912397475, 0.5210904799154625}, {
+     0.809165557339628, 0.5793390698121236}, {0.7468511123004928, 
+     0.6069071047250472}, {0.742626063009776, 0.5976884826693383}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {0.7181943357990127,
+      0.5876958476859666}, {0.7213580907681117, 0.5775110818340262}, {
+     0.7223095960219761, 0.5742521763395408}, {0.7336233594539823, 
+     0.568437015384193}, {0.7536946308571324, 0.5936573940649859}, {
+     0.7550486960260931, 0.6085374723811875}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+     0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+     1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+     0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`, 
+     0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+     1.1945581218750145`, 0.5072588871963075}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+    None], LineBox[{{0.22679555187496653`, 0.5023253471274285}, {
+     0.6668148819081345, 0.5015937713002221}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+    None], LineBox[{{0.6701984377697529, 0.5017424539915721}, {
+     0.6706172432879995, 0.3580217742633663}}]}, InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], 
+   StyleBox[InsetBox[Cell["TUNNEL OXIDE LAYER",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "bddeeb9f-9927-4276-8af6-ccfeccaeffb7"], \
+{0.8337831611931144, 0.405153224367683}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "9e32981f-07a6-4655-8f70-74c55974e97b"], \
+{0.9426939164046642, 0.7926409302793668}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "44d22539-421f-4d2c-89ea-c53cf5da1918"], \
+{0.8337831611931142, 0.2890283638084693}, {
+     Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+     0., 1.}},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[Opacity[1.]], EdgeForm[{Hue[
+    0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {1.0058709703981228`,
+      0.5828422559823552}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {0.7129983438824287,
+      0.41217972470391073`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{GrayLevel[0.09090909090909091], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {0.5727584827809485,
+      0.2935695082396037}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+     0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+     0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+     0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+     0.6764270497852924}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+     0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+     0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+     0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+     0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+     0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+     0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+  ContentSelectable->True,
+  ImagePadding->{{0., 0.}, {0., 0.}},
+  ImageSize->{830.58203125, 621.},
+  PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{
+  3.773733226223918*^9},ExpressionUUID->"e2727e0e-718c-4d2b-9301-\
+6c2572b16510"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124, 
+     0.49637960811611115`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+     0.21989103435025448`, 0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303, 
+     0.3525642609137193}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+     0.6480176211453729}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+     1.2204537033224923`, 0.6480176211453726}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`, 
+     0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924, 
+     0.7966271447333806}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+     0.796032420371369}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+     0.49949771501502616`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+     0.6470130511754242}}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126, 
+     0.10683876103037204`}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+     0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+     0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+     0.3169683578757646, 0.6854685019739162}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {0.7195758482349119,
+      0.569566012964259}, {0.6902804653226654, 0.5102231920256539}, {
+     0.6684434197464787, 0.5013284477198181}, {0.6714370016605595, 
+     0.5232203878298818}, {0.6984963472262249, 0.5552476887113964}, {
+     0.6893051724374545, 0.5695605235108713}, {0.6938760572915951, 
+     0.5601516004043896}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {0.6689447898225536,
+      0.6384495038906501}, {0.6719566699145934, 0.6069034450894553}, {
+     0.6600829822370439, 0.6071266828605543}, {0.655104048014419, 
+     0.626740499814731}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+     0.4989954300300504}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755, 
+     0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+     0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+     0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {0.7725326050658508,
+      0.7928678276860583}, {0.7780806126229982, 0.7856144299431386}, {
+     0.8020439064780127, 0.694615761135585}, {0.7492518332487045, 
+     0.6891061797521513}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {0.6684434197464789,
+      0.6480523876834965}, {0.6759895883367415, 0.6367313049803067}, {
+     0.7263242162661655, 0.6300195333049713}, {0.7557312180639615, 
+     0.6693093810183852}, {0.7413451905526509, 0.6719973833605519}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {0.7731492536630666,
+      0.5015937713002229}, {0.7829149912397475, 0.5210904799154625}, {
+     0.809165557339628, 0.5793390698121236}, {0.7468511123004928, 
+     0.6069071047250472}, {0.742626063009776, 0.5976884826693383}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {0.7181943357990127,
+      0.5876958476859666}, {0.7213580907681117, 0.5775110818340262}, {
+     0.7223095960219761, 0.5742521763395408}, {0.7336233594539823, 
+     0.568437015384193}, {0.7536946308571324, 0.5936573940649859}, {
+     0.7550486960260931, 0.6085374723811875}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+     0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+     1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+     0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`, 
+     0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+     1.1945581218750145`, 0.5072588871963075}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+    None], LineBox[{{0.22679555187496653`, 0.5023253471274285}, {
+     0.6668148819081345, 0.5015937713002221}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+    None], LineBox[{{0.6701984377697529, 0.5017424539915721}, {
+     0.6706172432879995, 0.3580217742633663}}]}, InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], 
+   StyleBox[InsetBox[Cell["TUNNEL OXIDE LAYER",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "845ccee2-f9f6-41c1-8782-874579e26f3f"], \
+{0.8337831611931144, 0.405153224367683}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "fc0db65b-7ad5-4d42-a9d5-485cf81f0249"], \
+{0.9426939164046642, 0.7926409302793668}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "64a27ca2-1c30-4990-9400-48e5dbdfda51"], \
+{0.8337831611931142, 0.2890283638084693}, {
+     Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+     0., 1.}},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[Opacity[1.]], EdgeForm[{Hue[
+    0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {1.0058709703981228`,
+      0.5828422559823552}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {0.7129983438824287,
+      0.41217972470391073`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{GrayLevel[0.09090909090909091], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {0.5727584827809485,
+      0.2935695082396037}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+     0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+     0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+     0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+     0.6764270497852924}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+     0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+     0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+     0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+     0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+     0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+     0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+  ContentSelectable->True,
+  ImagePadding->{{0., 0.}, {0., 0.}},
+  ImageSize->{830.58203125, 621.},
+  PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{
+  3.77373325581913*^9},ExpressionUUID->"d078885a-8d9c-4a21-86da-cebd5e2bca3a"],
+
+Cell[BoxData[
+ RowBox[{"m", "=", 
+  GraphicsBox[{
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124,
+       0.49637960811611115`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+      0.21989103435025448`, 0.49999999999999933`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303,
+       0.3525642609137193}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     FaceForm[None], 
+     RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+    {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+      0.6480176211453729}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+      1.2204537033224923`, 0.6480176211453726}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`,
+       0.49999999999999933`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924,
+       0.7966271447333806}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+      0.796032420371369}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+      0.49949771501502616`}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+      0.6470130511754242}}]}, 
+    {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126,
+       0.10683876103037204`}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+      0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+      0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+      0.3169683578757646, 0.6854685019739162}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {
+      0.7195758482349119, 0.569566012964259}, {0.6902804653226654, 
+      0.5102231920256539}, {0.6684434197464787, 0.5013284477198181}, {
+      0.6714370016605595, 0.5232203878298818}, {0.6984963472262249, 
+      0.5552476887113964}, {0.6893051724374545, 0.5695605235108713}, {
+      0.6938760572915951, 0.5601516004043896}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {
+      0.6689447898225536, 0.6384495038906501}, {0.6719566699145934, 
+      0.6069034450894553}, {0.6600829822370439, 0.6071266828605543}, {
+      0.655104048014419, 0.626740499814731}}]}, 
+    {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+     EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+     LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+      0.4989954300300504}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755,
+       0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+      0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+      0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {
+      0.7725326050658508, 0.7928678276860583}, {0.7780806126229982, 
+      0.7856144299431386}, {0.8020439064780127, 0.694615761135585}, {
+      0.7492518332487045, 0.6891061797521513}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {
+      0.6684434197464789, 0.6480523876834965}, {0.6759895883367415, 
+      0.6367313049803067}, {0.7263242162661655, 0.6300195333049713}, {
+      0.7557312180639615, 0.6693093810183852}, {0.7413451905526509, 
+      0.6719973833605519}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {
+      0.7731492536630666, 0.5015937713002229}, {0.7829149912397475, 
+      0.5210904799154625}, {0.809165557339628, 0.5793390698121236}, {
+      0.7468511123004928, 0.6069071047250472}, {0.742626063009776, 
+      0.5976884826693383}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {
+      0.7181943357990127, 0.5876958476859666}, {0.7213580907681117, 
+      0.5775110818340262}, {0.7223095960219761, 0.5742521763395408}, {
+      0.7336233594539823, 0.568437015384193}, {0.7536946308571324, 
+      0.5936573940649859}, {0.7550486960260931, 0.6085374723811875}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+      0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+      1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+      0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`,
+       0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+      1.1945581218750145`, 0.5072588871963075}}]}, 
+    {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+     Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+     None], LineBox[{{0.22679555187496653`, 0.5023253471274285}, {
+      0.6668148819081345, 0.5015937713002221}}]}, 
+    {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+     Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+     None], LineBox[{{0.6701984377697529, 0.5017424539915721}, {
+      0.6706172432879995, 0.3580217742633663}}]}, InsetBox[
+     GraphicsBox[{},
+      ContentSelectable->True,
+      ImageSize->{480, 360},
+      PlotRange->NCache[{{0, 
+          Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+     Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+     GraphicsBox[{},
+      ContentSelectable->True,
+      ImageSize->{480, 360},
+      PlotRange->NCache[{{0, 
+          Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+     Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+     GraphicsBox[{},
+      ContentSelectable->True,
+      ImageSize->{480, 360},
+      PlotRange->NCache[{{0, 
+          Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+     Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], 
+    StyleBox[InsetBox[Cell["TUNNEL OXIDE LAYER",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "a9a62e9f-db9d-406a-92d5-72bf74855bca"], \
+{0.8337831611931144, 0.405153224367683}, {Left, Baseline},
+      Alignment->{Left, Top}],
+     StripOnInput->False,
+     FontSize->14], 
+    StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "4f01085d-fe9f-41d0-af0a-085fb57dda98"], \
+{0.9426939164046642, 0.7926409302793668}, {Left, Baseline},
+      Alignment->{Left, Top}],
+     StripOnInput->False,
+     FontSize->14], 
+    StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "482b99f2-1926-4fe6-ba6c-b7bed5082d42"], \
+{0.8337831611931142, 0.2890283638084693}, {
+      Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+      0., 1.}},
+      Alignment->{Left, Top}],
+     StripOnInput->False,
+     FontSize->14], 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+     0.0055000000000000005`], AbsoluteThickness[8], StrokeForm[Opacity[1.]], 
+     EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+     AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {
+      1.0058709703981228`, 0.5828422559823552}}]}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+     0.0055000000000000005`], AbsoluteThickness[8], StrokeForm[{Hue[
+     0., 0.6666666666666666, 1.], Opacity[1.]}], EdgeForm[{Hue[
+     0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {
+      0.7129983438824287, 0.41217972470391073`}}]}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+     0.0055000000000000005`], AbsoluteThickness[8], StrokeForm[{GrayLevel[
+     0.09090909090909091], Opacity[1.]}], EdgeForm[{Hue[
+     0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {
+      0.5727584827809485, 0.2935695082396037}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+      0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+      0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+      0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+      0.6764270497852924}}]}, 
+    {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+     EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+     PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+      0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+      0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+      0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+      0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+      0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+      0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+   ContentSelectable->True,
+   ImagePadding->{{0., 0.}, {0., 0.}},
+   ImageSize->{830.58203125, 621.},
+   PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+   PlotRangePadding->Automatic]}]], "Input",
+ CellChangeTimes->{{3.7737332812945557`*^9, 
+  3.7737332818430777`*^9}},ExpressionUUID->"a330d906-92ce-4ce6-8925-\
+33e7525166be"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.668302523776195, 0.4988362358818116}, \
+{1.1152263713340747, 0.3508186147364377}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.2198910343502545, 0.6480176211453731}, \
+{0.6668148819081341, 0.49999999999999967}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.049207460167153855, 0.25485638217574436}, \
+{0.4961313077250336, 0.10683876103037238}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.49626379781620183`, 0.2572253616690193}, {0.6656375658555124, 
+     0.49637960811611115`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.049207460167153855`, 0.2579645106838486}, {
+     0.21989103435025448`, 0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4989484976439794, 0.10756446676822173`}, {0.6696199925892303, 
+     0.3525642609137193}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.7728272057309894, 0.647013051175424}, \
+{1.2197510532888691, 0.4989954300300508}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    FaceForm[None], 
+    RectangleBox[{0.3266060082067328, 0.7960352422907447}, \
+{0.7735298557646124, 0.6480176211453722}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6683025237761951, 0.5013284477198183}, {0.7735298557646124, 
+     0.6480176211453729}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1128768852841482`, 0.49883623588181203`}, {
+     1.2204537033224923`, 0.6480176211453726}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{1.1147817256096726`, 0.3525642609137195}, {1.2204537033224923`, 
+     0.49999999999999933`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.22007701562999504`, 0.6492217176202679}, {0.3271923123776924, 
+     0.7966271447333806}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6668148819081479, 0.6480204430647574}, {0.7728147279311002, 
+     0.796032420371369}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.6646355689132256, 0.6485199061303466}, {0.7728272057309895, 
+     0.49949771501502616`}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.7735298557646123, 0.7960352422907446}, {0.8817214925823762, 
+     0.6470130511754242}}]}, 
+   {AbsoluteThickness[1.5], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.4915750614132599, 0.10749310387418154`}, {0.4989473973129126, 
+     0.10683876103037204`}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31712938184180317`, 0.7796034784836302}, {
+     0.32744772439284364`, 0.7937516296814746}, {0.3792169294742477, 
+     0.7690033439920222}, {0.3182108041591759, 0.6652270575157481}, {
+     0.3169683578757646, 0.6854685019739162}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.28974158398177496, 0.6760832137683891}, \
+{0.36347043243169064, 0.654370901263107}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.37656735330579455, 0.6694301489929141}, \
+{0.3041943998426357, 0.6956276503767139}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7136728560253612, 0.5770682659274202}, {0.7195758482349119,
+      0.569566012964259}, {0.6902804653226654, 0.5102231920256539}, {
+     0.6684434197464787, 0.5013284477198181}, {0.6714370016605595, 
+     0.5232203878298818}, {0.6984963472262249, 0.5552476887113964}, {
+     0.6893051724374545, 0.5695605235108713}, {0.6938760572915951, 
+     0.5601516004043896}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6706172432879995, 0.5219944099066334}, \
+{0.745087167945252, 0.44365259079327163}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7722160465871613, 0.48696437802205855}, \
+{0.7302327070781927, 0.49949771501502616}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7357770549997484, 0.5067117716753355}, \
+{0.7597842644818642, 0.4806771240753702}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7442582604837125, 0.4639544192387044}, \
+{0.7666625495766259, 0.4999999999999996}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.5870000594690783, 0.5828422559823555}, \
+{0.6845586250749083, 0.5044949474156062}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6142460464499249, 0.5684370153841932}, \
+{0.67160168526219, 0.622277574210548}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6645038220319213, 0.6448831432610099}, {0.6689447898225536,
+      0.6384495038906501}, {0.6719566699145934, 0.6069034450894553}, {
+     0.6600829822370439, 0.6071266828605543}, {0.655104048014419, 
+     0.626740499814731}}]}, 
+   {AbsoluteThickness[3], StrokeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], 
+    EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[None], 
+    LineBox[{{0.8800270813033795, 0.647395483094771}, {0.7728147279311002, 
+     0.4989954300300504}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7255941189656042, 0.7021344824589093}, \
+{0.8167483222858085, 0.5796757562865678}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.874544947186884, 0.6521456900929091}, {0.8772219706222755, 
+     0.6476919135777056}, {0.8661442536859394, 0.6360030374975413}, {
+     0.8141701090113953, 0.6313132144866676}, {0.7854218416201209, 
+     0.6710166010219534}, {0.8078371096198098, 0.6822791295556746}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7682069157963598, 0.7854076605322027}, {0.7725326050658508,
+      0.7928678276860583}, {0.7780806126229982, 0.7856144299431386}, {
+     0.8020439064780127, 0.694615761135585}, {0.7492518332487045, 
+     0.6891061797521513}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.6744891377441093, 0.6530148535459583}, {0.6684434197464789,
+      0.6480523876834965}, {0.6759895883367415, 0.6367313049803067}, {
+     0.7263242162661655, 0.6300195333049713}, {0.7557312180639615, 
+     0.6693093810183852}, {0.7413451905526509, 0.6719973833605519}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7619654072945687, 0.5233814117959206}, {0.7731492536630666,
+      0.5015937713002229}, {0.7829149912397475, 0.5210904799154625}, {
+     0.809165557339628, 0.5793390698121236}, {0.7468511123004928, 
+     0.6069071047250472}, {0.742626063009776, 0.5976884826693383}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.7138375396269916, 0.6094084656520325}, {0.7181943357990127,
+      0.5876958476859666}, {0.7213580907681117, 0.5775110818340262}, {
+     0.7223095960219761, 0.5742521763395408}, {0.7336233594539823, 
+     0.568437015384193}, {0.7536946308571324, 0.5936573940649859}, {
+     0.7550486960260931, 0.6085374723811875}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[3]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.210287047208467, 0.5120603290927304}, {1.215116064483698, 
+     0.5003037497541181}, {1.2027587612704789`, 0.48401654155287477`}, {
+     1.117444291487217, 0.48634955924263834`}, {1.1178911175073747`, 
+     0.5000933207075904}, {1.1302356019413269`, 0.5106550290254845}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.7350451278813913, 0.48983353232601873}, \
+{0.7666625495766258, 0.5013284477198182}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    RectangleBox[{0.6809685225593662, 0.5030411571767742}, \
+{0.6493492710463356, 0.5102231920256539}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{1.215150891349994, 0.508071326297684}, {1.2161700998623064`, 
+     0.49913632600033864`}, {1.2045251394092436`, 0.4854145223489372}, {
+     1.1945581218750145`, 0.5072588871963075}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+    None], LineBox[{{0.22679555187496653`, 0.5023253471274285}, {
+     0.6668148819081345, 0.5015937713002221}}]}, 
+   {AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.]}], EdgeForm[
+    None], LineBox[{{0.6701984377697529, 0.5017424539915721}, {
+     0.6706172432879995, 0.3580217742633663}}]}, InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], InsetBox[
+    GraphicsBox[{},
+     ContentSelectable->True,
+     ImageSize->{480, 360},
+     PlotRange->NCache[{{0, 
+         Rational[4, 3]}, {0, 1}}, {{0, 1.3333333333333333`}, {0, 1}}]], 
+    Scaled[{0.5, 0.5}], Center, Scaled[{0.5, 0.5}]], 
+   StyleBox[InsetBox[Cell["TUNNEL OXIDE LAYER",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "213629b6-d592-49b3-ba43-d2310240ed64"], \
+{0.8337831611931144, 0.405153224367683}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+TOP ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "ab739a70-4ea0-4e9d-ac96-4f4eef119e3f"], \
+{0.9426939164046642, 0.7926409302793668}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   StyleBox[InsetBox[Cell["\<\
+SUPERCONDUCTING 
+BOTTOM ELECTRODE\
+\>",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left,ExpressionUUID->
+      "030d8962-6ded-4397-b378-77e88dd7fd3f"], \
+{0.8337831611931142, 0.2890283638084693}, {
+     Left, Baseline}, {0.24587353214303706, 0.1014761081321246}, {{1., 0.}, {
+     0., 1.}},
+     Alignment->{Left, Top}],
+    StripOnInput->False,
+    FontSize->14], 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[Opacity[1.]], EdgeForm[{Hue[
+    0., 0.6666666666666666, 1.], Opacity[1.], AbsoluteThickness[8]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{1.0058709703981228`, 0.7409705353589418}, {1.0058709703981228`,
+      0.5828422559823552}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{Hue[0., 0.6666666666666666, 1.], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.41137277505592285`}, {0.7129983438824287,
+      0.41217972470391073`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.0055000000000000005`],
+     AbsoluteThickness[8], StrokeForm[{GrayLevel[0.09090909090909091], 
+    Opacity[1.]}], EdgeForm[{Hue[0., 0.6666666666666666, 1.], Opacity[1.], 
+    AbsoluteThickness[8]}], EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    ArrowBox[{{0.8109324707067088, 0.29404915217126315`}, {0.5727584827809485,
+      0.2935695082396037}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.31518279488727874`, 0.651880367686527}, {
+     0.3366619280059046, 0.6516245638754696}, {0.34001253858024705`, 
+     0.6559375838701019}, {0.32078112419484717`, 0.6584956219806763}, {
+     0.2962176680756845, 0.6618378455448202}, {0.32425124966451974`, 
+     0.6764270497852924}}]}, 
+   {EdgeForm[{RGBColor[0., 0., 0.], Opacity[1.], AbsoluteThickness[1.5]}], 
+    EdgeForm[None], FaceForm[Hue[0., 0., 1.]], 
+    PolygonBox[{{0.29763926630434795`, 0.6551617854267311}, {
+     0.32018983997584555`, 0.6519642377885131}, {0.3309000519994634, 
+     0.6519642377885131}, {0.32443576388888906`, 0.6523668142780461}, {
+     0.3270608980810522, 0.6523668142780461}, {0.3224753002549653, 
+     0.651219890633387}, {0.3271258974100914, 0.6512723094471282}, {
+     0.334454047571122, 0.6523227824745035}, {0.334454047571122, 
+     0.6569461218464842}, {0.32394722054482034`, 0.6576715982286634}}]}},
+  ContentSelectable->True,
+  ImagePadding->{{0., 0.}, {0., 0.}},
+  ImageSize->{830.58203125, 621.},
+  PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+  PlotRangePadding->Automatic]], "Output",
+ CellChangeTimes->{
+  3.773733282544796*^9},ExpressionUUID->"1a9ee557-b3f6-4be4-8324-\
+677f21160ce8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\</Users/alicepagano/Documents/junction.eps\>\"", ",", "m", ",", 
+   "\"\<EPS\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.773733211175304*^9, 3.773733219609054*^9}, {
+  3.773733286031622*^9, 
+  3.773733286348987*^9}},ExpressionUUID->"bf215907-256a-43fd-8b85-\
+dd2e24c3be92"],
+
+Cell[BoxData["\<\"/Users/alicepagano/Documents/junction.eps\"\>"], "Output",
+ CellChangeTimes->{
+  3.7737332301665697`*^9, {3.773733267950348*^9, 
+   3.7737332883159637`*^9}},ExpressionUUID->"e62ef22c-0506-431d-861e-\
+1cacc3b38b81"]
+}, Open  ]]
+},
+WindowSize->{1115, 940},
+WindowMargins->{{138, Automatic}, {-2, Automatic}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 16131, 289, 636, "Input", "ExpressionUUID" -> \
+"1cd20756-c21a-4e2e-923f-f607598688fd"],
+Cell[16692, 311, 15662, 281, 636, "Input", "ExpressionUUID" -> \
+"bbf18abb-8ca0-4e81-bd21-5b0d06628957"],
+Cell[32357, 594, 16000, 286, 638, "Input", "ExpressionUUID" -> \
+"47da3949-8e66-4d4a-b041-8b467816db9d"],
+Cell[48360, 882, 129, 3, 32, "Input", "ExpressionUUID" -> \
+"7d6bfd97-f850-42a2-b1f4-b319a4e5286b"],
+Cell[48492, 887, 15676, 281, 636, InheritFromParent, "ExpressionUUID" -> \
+"e2727e0e-718c-4d2b-9301-6c2572b16510"],
+Cell[64171, 1170, 15673, 280, 636, InheritFromParent, "ExpressionUUID" -> \
+"d078885a-8d9c-4a21-86da-cebd5e2bca3a"],
+Cell[79847, 1452, 16005, 286, 638, InheritFromParent, "ExpressionUUID" -> \
+"a330d906-92ce-4ce6-8925-33e7525166be"],
+Cell[95855, 1740, 15677, 281, 636, "Output", "ExpressionUUID" -> \
+"1a9ee557-b3f6-4be4-8324-677f21160ce8"],
+Cell[CellGroupData[{
+Cell[111557, 2025, 332, 8, 32, "Input", "ExpressionUUID" -> \
+"bf215907-256a-43fd-8b85-dd2e24c3be92"],
+Cell[111892, 2035, 232, 4, 32, "Output", "ExpressionUUID" -> \
+"e62ef22c-0506-431d-861e-1cacc3b38b81"]
+}, Open  ]]
+}
+]
+*)
+
